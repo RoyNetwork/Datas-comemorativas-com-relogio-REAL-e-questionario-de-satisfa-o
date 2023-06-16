@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo DOM III</title>
+
+ 
+
+
+
+
+<script type="text/javascript">
+    function startTime()
+    {
+    var today=new Date();
+    var h=today.getHours();
+    var m=today.getMinutes();
+    var s=today.getSeconds();
+    m=checkTime(m);
+    s=checkTime(s);
+    document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+    t=setTimeout('startTime()',500);
+    
+    }
+    
+    function checkTime(i)
+    {
+    if (i<10)
+      {
+      i="0" + i;
+      }
+    return i;
+    }
+    </script>
+    
+    
+    <div id="txt">
+    <script type="text/javascript">document.write(startTime())</script>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function funcao1(gg)
+        {
+        alert("Shalom!");
+        }
+        </script>
+
+
+
+
+<script>
+    function funcao2(gg)
+    {
+    alert("7 de setembro. Independência do Brasil!");
+    }
+    </script>
+
+
+
+
+<script>
+    function funcao3(gg)
+    {
+    alert("15 de outubro. Dia dos professores!");
+    }
+    </script>
+
+
+
+
+<script>
+    function funcao4(gg)
+    {
+    alert("12 de maio. Dia das mães!");
+    }
+    </script>
+
+
+
+
+
+
+
+
+<script>
+    function funcao6(gg)
+    {
+    alert("27 de janeiro. Dia internacional a memória do holocausto.");
+    }
+    </script>
+
+
+
+
+<script>
+    function funcao7(gg)
+    {
+    alert("30 de janeiro. Dia da saudade!");
+    }
+    </script>
+
+
+
+
+
+<script>
+    function funcao8(gg)
+    {
+    alert("22 de maio. Dia do abraço!");
+    }
+    </script>
+
+
+
+
+
+
+<script>
+    function funcao9(gg)
+    {
+    alert("25 de outubro. Dia mundial do Karatê!");
+    }
+    </script>
+
+
+
+
+  
+<script>
+    function funcao10(gg)
+    {
+    alert("11 de abril. Dia do Kung Fu no Brasil!");
+    }
+    </script>
+
+
+
+
+
+<script>
+    function funcao11(gg)
+    {
+    alert("16 de maio. Dia nacional do Taekwondo!");
+    }
+    </script>
+
+
+
+
+
+
+
+
+<script>
+    function funcao20(gg)
+    {
+    alert(":D");
+    }
+    </script>
+
+
+
+
+
+
+
+
+
+<script>
+    function funcao30(gg)
+    {
+    alert(":)");
+    }
+    </script>
+
+
+
+
+
+
+
+
+
+
+<script>
+    function funcao40(gg)
+    {
+    alert("-.-");
+    }
+    </script>
+
+
+
+
+
+
+
+
+   <script>
+        function funcao50(gg)
+        {
+        alert("Shalom.");
+        }
+        </script>
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <!--Não colete do úsúaríó (usando input de data) e
+    altere a cor do "quadrado" dessa data no calendário
+        dinamicamente. Por exemplo, se o usuário escolher
+    01/10/2022 - o quadrado com o dia 01 deve mudar de cor. -->
+    <table class="calendar">
+
+        <input id="nome" placeholder="Digite uma data" onkeyup="destacar()">
+
+        <input type="button" onclick="funcao1()" value="Clique após digitar" />
+
+
+
+
+    <thead>
+        <tr>
+            <th>Shalom </th>
+            <th>Seg </th>
+            <th>Ter </th>
+            <th>Qua </th>
+            <th>Qui </th>
+            <th>Sex </th>
+            <th>Sab </th>
+            <th>Dom </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="funcao1()" value="6" /></td>
+            <td><input type="button" onclick="funcao2()" value="7" /></td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td><input type="button" onclick="funcao10()" value="11" /></td>
+            <td><input type="button" onclick="funcao4()" value="12" /></td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="funcao1()" value="14" /></td>
+            <td><input type="button" onclick="funcao3()" value="15" /></td>
+            <td><input type="button" onclick="funcao11()" value="16" /></td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="funcao8()" value="22" /></td>
+            <td>23</td>
+            <td>24</td>
+            <td><input type="button" onclick="funcao9()" value="22" /></td>
+            <td>26</td>
+            <td><input type="button" onclick="funcao6()" value="27" /></td>
+            <td>28</td>
+            <td>29</td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="funcao7()" value="30" /></td>
+            <td>31</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+    </tbody>
+    </table>
+    <style>
+        .calendar th, td {
+            border: solid 1px blue;
+            width: 40px;
+            height: 30px;
+        }
+        .calendar {
+            text-align: center;
+        }
+    </style>
+
+
+
+
+
+
+    <h3>Diga o que achou:</h3>
+   
+
+<input type="button" onclick="funcao20()" value="Gostei!" />
+
+<input type="button" onclick="funcao30()" value="Legal!" />
+
+<input type="button" onclick="funcao40()" value="Então..." />
+
+<input type="button" onclick="funcao50()" value="Shalom" />
+
+
+
+</body>
+</html>
+
+
+
+
+<!--<input id="data" placeholder="Digite uma data" onkeyup="destacar()">
+<ol class="listaDeDatas">  
+
+
+
+
+<script>
+    function destacar(){
+        console.log("entrei");
+        var data = document.querySelector("#data");
+        var lista = document.querySelector(".listaDeDatas");
+        var listaDeDatas = lista.querySelectorAll("li");
+        var novaLista = [];
+
+
+
+        for (var i = 0; i < listaDeDatas.length; i++) {
+            var nomeAtual = listaDeDatas[i].textContent;
+            if (nome.value == DataAtual) {
+                var li = document.createElement("li");
+                var strong = document.createElement("Strong");
+                strong.innerText = DataAtual;
+                li.appendChild(strong);
+                novaLista.push(li);
+            } else {
+                var li = document.createElement("li");
+                li.innerText = DataAtual;
+                novaLista.push(li);
+            }
+        }
+        lista.innerText = "";
+        for (var i = 0; i < novaLista.length; i++) {
+            lista.appendChild(novaLista[i]);
+        }
+        console.log(novaLista)
+    }
+</script>-->
